@@ -41,9 +41,11 @@ class App extends Component {
             <div className="App">
             <h1>Halla</h1>
             {this.props.rants.map(rant =>
-                <div>:)</div>
+                <Rant
+                    snap={rant}
+                    key={rant.id}
+                />
             )}
-            <Rant/>
             </div>
         );
     }
